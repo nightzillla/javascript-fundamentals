@@ -20,7 +20,8 @@ document.querySelector('.my-second-button').addEventListener('click', function (
 // });
 document.querySelector('#my-third-button').addEventListener('click', function (){
     alert('Third Button was clicked!');
-    this.style.backgroundColor = 'red';
+    this.style.backgroundColor = 'blue';
+    this.style.color = 'white';
 });
 
 // To call an element with a class name using vanilla JavaScript, you can use the getElementsByClassName method. This method returns a collection of elements that have the specified class name, as an array-like object.
