@@ -1,23 +1,25 @@
 // Select element by ID the fastest way since it’s looking for the specific element.
-const button = document.getElementById('my-first-button');
+const button = document.getElementById('my-first-id-button');
 const buttonTwo = document.querySelector(".my-second-button");
 const buttonThree = document.querySelector('#my-third-button');
 
-// This is using getElementByID
+////////////////////////// USING getElementById ///////////////////////////////////////////////////////////////
 button.addEventListener('click', function() {
     // This function will be called when the button is clicked
     alert('First Button was clicked!');
 });
-// THIS IS USING querySelector by class name
+////////////////////////// USING querySelector  ///////////////////////////////////////////////////////////////
+// note you can use variable or call it with querySelector
+// buttonTwo.addEventListener('click', function() {
+//    alert('Second button was clicked!');
+// });
+
 document.querySelector('.my-second-button').addEventListener('click', function () {
-    alert('Second button was click!')
+    alert('Second button was clicked!');
     this.style.backgroundColor = 'red';
     this.style.color = 'white';
-})
-// buttonThree.addEventListener('click', function() {
-//     // This function will be called when the button is clicked
-//     alert('Third Button was clicked!');
-// });
+});
+
 document.querySelector('#my-third-button').addEventListener('click', function (){
     alert('Third Button was clicked!');
     this.style.backgroundColor = 'blue';

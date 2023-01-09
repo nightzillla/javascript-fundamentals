@@ -4,6 +4,36 @@ CSS3 layout mode that provides an easy and clean way to arrange items with a con
 
 Display Flex - using display flex in "parent elements", child elements automatically align like columns or rows with auto width and auto height
 
+MEDIA QUERIES
+
+min-width: 768px - from bigger screen to small the content is showing flex items until it reach 768px it will not show
+max-width: 768px - from bigger screen to small the content will not change until you reach 768px
 
 
+/// FLEX PROPERTIES ///
+display: flex | inline-flex | block
+
+flex-direction: row | column
+row will assign items horizontally
+column will assign items vertically
+
+flex-wrap: wrap | nowrap | wrapreverse
+
+flex-basis: <length>
+
+justify-content: flex-start | flex-end | center
+
+align-self: flex-start | flex-end | center
+
+align-items: flex-start | flex-end | center
+
+align content: flex start | flex-end | center
+
+flex-grow: <number>;
+
+flex-shrink: <number>;
+
+flex: <integer>;
+
+order: <integer>;
 
