@@ -44,4 +44,44 @@ function calculateTotalCost() {
 
 console.log(calculateTotalCost())
 
-// 1. Write a JavaScript program that accept two integers and display the larger.
+// Get the sum of two arrays
+let arr1 = [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2];
+let arr2 = [9, 2, 42, 55, 71, 22, 4,  5,  90, 25, 26];
+let sum1 = 0;
+let sum2 = 0;
+for (let i = 0; i < arr1.length; i++){
+    sum1 += arr1[i];
+}
+for (let i = 0; i < arr2.length; i++){
+    sum2 += arr2[i];
+}
+console.log(sum1 + sum2);
+
+
+let arr_1 = [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2];
+let arr_2 = [9, 2, 42, 55, 71, 22, 4, 5, 90, 25, 26];
+let totalArray = 0;
+
+for(let i = 0; i < arr_1.length; i++){
+    for(let j = 0; i < arr_2.length; i++){
+        totalArray += arr_1[i] + arr_2[j];
+    }
+}
+console.log("the total loop"+ "=" + totalArray)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
