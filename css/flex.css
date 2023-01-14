@@ -1,28 +1,35 @@
-.container-1 div, .container-2 div {
+.container-1 div, .container-2 div, .container-3 div {
     border:1px #ccc solid;
     padding:10px;
 }
 .container-2-box {
     flex-basis: 20%;
 }
+.container-3-box {
+    flex-basis: 15%;
+}
 .box-1 {
-    flex:3;
+    flex:1;
     order: 2;
 
 }
 .box-2 {
-    flex: 2;
+    flex: 3;
     order:1;
 
 }
 .box-3 {
-    flex: 1;
+    flex: 3;
     order: 3;
 }
-
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
 @media screen and (min-width: 768px){
     .container-1 {
         display: flex;
+        align-items: end;
         /*
         align-items: flex-start;
         align-items: flex-end;
