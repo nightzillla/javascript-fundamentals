@@ -42,7 +42,7 @@ function calculateTotalCost() {
     return totalCost;
 }
 
-console.log(calculateTotalCost())
+console.log(calculateTotalCost());
 
 // Get the sum of two arrays
 let arr1 = [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2];
@@ -67,12 +67,20 @@ for(let i = 0; i < arr_1.length; i++){
         totalArray += arr_1[i] + arr_2[j];
     }
 }
-console.log("the total loop"+ "=" + totalArray)
+console.log("the total loop"+ "=" + totalArray);
 
+// looping maps
 
+let firstLoop = [1, 4, 5, 6, 54, 7];
+let secondLoop = [1, 4,5,65,89, 90];
+let totalNumber = 0;
 
-
-
+for(let i = 0;  i < firstLoop.length; i++){
+    for(let j = 0; j < secondLoop.length; i++){
+        totalNumber += firstLoop[i] + secondLoop[i];
+    }
+}
+console.log("This is the total number " + totalNumber)
 
 
 
