@@ -3,3 +3,7 @@
 - document.documentElement       html              ELEMENT_NODE
 - document.head                  head              ELEMENT_NODE
 - document.body                  body              ELEMENT_NODE
+
+
+// Parent Nodes
+The nodes in the DOM are referred to as parents, children, and siblings, depending on their relation to other nodes. The parent of any node is the node that is one level above it, or closer to the document in the DOM hierarchy. There are two properties to get the parent -- parentNode and parentElement.

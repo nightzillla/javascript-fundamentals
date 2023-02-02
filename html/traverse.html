@@ -1,29 +1,47 @@
 <!DOCTYPE html>
-<html>
+    <html lang="en">
     <head>
-        <title>Learning About Nodes</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Traversal</title>
         <style>
-            * { border: 2px solid #dedede; padding: 15px; margin: 15px; }
-            html { margin: 0; padding: 0; }
-            body { max-width: 600px; font-family: sans-serif; color: #333; }
+            body {
+                margin: 0;
+            }
+
+            div {
+                display:flex;
+                margin: .5rem;
+                padding: 1rem;
+                border: 3px solid black;
+                min-height: 1rem;
+                flex-grow: 1;
+            }
+
+            .grandparent {
+                background-color: hsl(0, 50%, 50%);
+                flex-direction: column;
+            }
+            .parent {
+                background-color: hsl(100, 50%, 50%);
+            }
+            .child {
+                background-color: hsl(200, 50%, 50%);
+            }
         </style>
     </head>
-
     <body>
-    <h1>Shark World</h1>
-    <p>The world's leading source on <strong>shark</strong> related information.</p>
-    <h2>Types of Sharks</h2>
-    <ul>
-        <li>Hammerhead</li>
-        <li>Tiger</li>
-        <li>Great White</li>
-    </ul>
+    <div class="grandparent" id="grandparent-id">
+        <div class="parent">
+            <div class="child"></div>
+            <div class="child"></div>
+        </div> <!-- END OF PARENT-->
+        <div class="parent">
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>  <!-- END OF PARENT-->
+    </div><!-- END OF GRANDPARENT-->
     </body>
-
-    <script>
-        const h1 = document.getElementsByTagName('h1')[0];
-        const p = document.getElementsByTagName('p')[0];
-        const ul = document.getElementsByTagName('ul')[0];
-    </script>
-
+    <script src="../js/traverse.js"></script>
 </html>
