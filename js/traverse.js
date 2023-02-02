@@ -2,9 +2,16 @@
 // Getting by the ID
 // const grandparent = document.getElementById("grandparent-id")
 const grandparent = document.querySelector(".grandparent")
-const parents = Array.from(grandparent.children)
-parents.forEach(changeColor);
-// changeColor(grandparent);
+// one child
+// const childOne = grandparent.querySelector('.child')
+const children = grandparent.querySelectorAll(".child")
+// const parents = Array.from(grandparent.children)
+// const parentOne = parents[0]
+// const children = parentOne.children
+
+children.forEach(changeColor);
+// parents.forEach(changeColor);
+// changeColor(children[0]);
 
 // const parents = document.querySelectorAll(".parent")
 // parents.forEach(changeColor)

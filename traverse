@@ -7,3 +7,5 @@
 
 // Parent Nodes
 The nodes in the DOM are referred to as parents, children, and siblings, depending on their relation to other nodes. The parent of any node is the node that is one level above it, or closer to the document in the DOM hierarchy. There are two properties to get the parent -- parentNode and parentElement.
+
+// JavaScript DOM (Document Object Model) traversal refers to the process of navigating and manipulating the elements of a web page using JavaScript. DOM traversal involves moving from one element of a web page to another, searching for specific elements, and manipulating elements such as changing styles, text content, and HTML structure. The process of DOM traversal allows developers to modify the content and behavior of a web page dynamically, making it possible to create dynamic and interactive user interfaces.
