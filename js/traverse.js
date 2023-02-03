@@ -43,9 +43,15 @@ function changeColor(element){
     element.style.backgroundColor = "#333"
 }
 ////////********************** child to grandParent **********///////
+// const childOne = document.querySelector("#child-one")
+// const grandparent = childOne.closest(".grandparent")
+// changeColor(grandparent)
+////////********************** sibling elements *************///////
 const childOne = document.querySelector("#child-one")
-const grandparent = childOne.closest(".grandparent")
-changeColor(grandparent)
+const childTwo = childOne.nextElementSibling
+// changeColor(childTwo);
+/** moving back one sibling */
+changeColor(childTwo.previousElementSibling)
 ////////********************** parent ***********************///////
 // const parent = document.querySelector('.parent')
 // parentColor(parent);
