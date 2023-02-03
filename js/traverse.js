@@ -2,10 +2,17 @@
 // Getting by the ID
 // const grandparent = document.getElementById("grandparent-id")
 const grandparent = document.querySelector(".grandparent")
-grandparent.style.backgroundColor ="#333"
-/** Making the grandparent Grey
- *
- *
+
+grandparentColor(grandparent);
+/** Create a Function for grandparentColor */
+function grandparentColor(element){
+    element.style.backgroundColor = "#333"
+}
+/** Making the grandparent Grey you can do it like this or make a function
+ * grandparent.style.backgroundColor ="#333"
+ * function grandparentColor(element){
+    element.style.backgroundColor = "#333"
+ * }
  * */
 // one child
 // const childOne = grandparent.querySelector('.child')
