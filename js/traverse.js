@@ -2,7 +2,7 @@
 // Getting by the ID
 // const grandparent = document.getElementById("grandparent-id")
 const grandparent = document.querySelector(".grandparent")
-
+grandparent.style.backgroundColor ="#333"
 /** Making the grandparent Grey
  *
  *
