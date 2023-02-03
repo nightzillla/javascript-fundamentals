@@ -9,14 +9,14 @@
 ////////********************** Getting by the ID ********************///////
 // const grandparent = document.getElementById("grandparent-id")
 ////////********************** grandparent ***********************///////
-const grandparent = document.querySelector(".grandparent")
+// const grandparent = document.querySelector(".grandparent")
 // grandparentColor(grandparent);
 /** Create a Function for grandparentColor */
-function grandparentColor(element){
-    element.style.backgroundColor = "#333"
-}
+// function grandparentColor(element){
+//     element.style.backgroundColor = "#333"
+// }
 /** getting children of grandparent */
-const parents = Array.from(grandparent.children)
+// const parents = Array.from(grandparent.children)
 // parents.forEach(grandparentColor)
 /** getting children of parents */
 // const parentOne = parents[0]
@@ -37,7 +37,11 @@ const parents = Array.from(grandparent.children)
 ////////********************** child to grandParent ***********///////
 const childOne = document.querySelector("#child-one")
 const parent = childOne.parentElement
-grandparentColor(parent)
+const grandparent = parent.parentElement
+changeColor(grandparent)
+function changeColor(element){
+    element.style.backgroundColor = "#333"
+}
 ////////********************** parent ***********************///////
 // const parent = document.querySelector('.parent')
 // parentColor(parent);
