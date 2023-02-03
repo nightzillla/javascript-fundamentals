@@ -9,13 +9,19 @@
 ////////********************** Getting by the ID ********************///////
 // const grandparent = document.getElementById("grandparent-id")
 ////////********************** grandparent ***********************///////
-/** grandParent */
-// const grandparent = document.querySelector(".grandparent")
+const grandparent = document.querySelector(".grandparent")
 // grandparentColor(grandparent);
 /** Create a Function for grandparentColor */
-// function grandparentColor(element){
-//     element.style.backgroundColor = "#ffff"
-// }
+function grandparentColor(element){
+    element.style.backgroundColor = "#333"
+}
+/** getting children of grandparent */
+const parents = Array.from(grandparent.children)
+// parents.forEach(grandparentColor)
+/** getting children of parents */
+const parentOne = parents[0]
+const children = parentOne.children
+grandparentColor(children[0])
 /** Making the grandparent Grey you can do it like this or make a function
  * grandparent.style.backgroundColor ="#333"
  * function grandparentColor(element){
@@ -29,9 +35,9 @@
 //     element.style.backgroundColor ="#333"
 // }
 ////////********************** All parents ***********************///////
-const parents = document.querySelectorAll('.parent')
-parents.forEach(allParentsColor)
-function allParentsColor(element){
-    element.style.backgroundColor = "#333"
-}
+// const parents = document.querySelectorAll('.parent')
+// parents.forEach(allParentsColor)
+// function allParentsColor(element){
+//     element.style.backgroundColor = "#333"
+// }
 
