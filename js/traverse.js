@@ -23,10 +23,15 @@
  * }
  * */
 ////////********************** parent ***********************///////
-const parent = document.querySelector('.parent')
-parentColor(parent);
-function parentColor(element){
-    element.style.backgroundColor ="#333"
+// const parent = document.querySelector('.parent')
+// parentColor(parent);
+// function parentColor(element){
+//     element.style.backgroundColor ="#333"
+// }
+////////********************** All parents ***********************///////
+const parents = document.querySelectorAll('.parent')
+parents.forEach(allParentsColor)
+function allParentsColor(element){
+    element.style.backgroundColor = "#333"
 }
-
 
