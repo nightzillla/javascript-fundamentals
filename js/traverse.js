@@ -35,9 +35,9 @@ const parents = Array.from(grandparent.children)
  * }
  * */
 ////////********************** child to grandParent ***********///////
-
 const childOne = document.querySelector("#child-one")
-grandparentColor(childOne)
+const parent = childOne.parentElement
+grandparentColor(parent)
 ////////********************** parent ***********************///////
 // const parent = document.querySelector('.parent')
 // parentColor(parent);
