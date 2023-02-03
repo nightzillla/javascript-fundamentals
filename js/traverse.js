@@ -1,8 +1,11 @@
 // NOTES YOU NEED TO PUT Array.from() if you want to use forEach Method
-// Getting by the ID
+////////********************** Getting by class name *****************///////
+const parents = Array.from(document.getElementsByClassName("parent"))
+parents.forEach(changeColor)
+////////********************** Getting by the ID ********************///////
 // const grandparent = document.getElementById("grandparent-id")
+////////********************** querySelector ***********************///////
 const grandparent = document.querySelector(".grandparent")
-
 grandparentColor(grandparent);
 /** Create a Function for grandparentColor */
 function grandparentColor(element){
@@ -14,7 +17,7 @@ function grandparentColor(element){
     element.style.backgroundColor = "#333"
  * }
  * */
-// one child
+
 // const childOne = grandparent.querySelector('.child')
 const children = grandparent.querySelectorAll(".child")
 // const parents = Array.from(grandparent.children)
