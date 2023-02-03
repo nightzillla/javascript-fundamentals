@@ -34,14 +34,18 @@
     element.style.backgroundColor = "#333"
  * }
  * */
-////////********************** child to grandParent ***********///////
-const childOne = document.querySelector("#child-one")
-const parent = childOne.parentElement
-const grandparent = parent.parentElement
-changeColor(grandparent)
+////////********************** child to parent to grandParent ***///////
+// const childOne = document.querySelector("#child-one")
+// const parent = childOne.parentElement
+// const grandparent = parent.parentElement
+// changeColor(grandparent)
 function changeColor(element){
     element.style.backgroundColor = "#333"
 }
+////////********************** child to grandParent **********///////
+const childOne = document.querySelector("#child-one")
+const grandparent = childOne.closest(".grandparent")
+changeColor(grandparent)
 ////////********************** parent ***********************///////
 // const parent = document.querySelector('.parent')
 // parentColor(parent);
