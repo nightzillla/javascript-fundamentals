@@ -25,15 +25,19 @@ const parents = Array.from(grandparent.children)
 /** grandparent to child */
 // const childOne = grandparent.querySelector('.child')
 // grandparentColor(childOne);
-/** color all of the children */
-const children = grandparent.querySelectorAll('.child')
-children.forEach(grandparentColor)
+/** color all of children */
+// const children = grandparent.querySelectorAll('.child')
+// children.forEach(grandparentColor)
 /** Making the grandparent Grey you can do it like this or make a function
  * grandparent.style.backgroundColor ="#333"
  * function grandparentColor(element){
     element.style.backgroundColor = "#333"
  * }
  * */
+////////********************** child to grandParent ***********///////
+
+const childOne = document.querySelector("#child-one")
+grandparentColor(childOne)
 ////////********************** parent ***********************///////
 // const parent = document.querySelector('.parent')
 // parentColor(parent);
