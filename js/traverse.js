@@ -2,6 +2,11 @@
 // Getting by the ID
 // const grandparent = document.getElementById("grandparent-id")
 const grandparent = document.querySelector(".grandparent")
+
+/** Making the grandparent Grey
+ *
+ *
+ * */
 // one child
 // const childOne = grandparent.querySelector('.child')
 const children = grandparent.querySelectorAll(".child")
